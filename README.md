@@ -19,4 +19,6 @@ Landing page responsiva do jogo Valorant com carousel, utilizando Bootstrap.
 
 - ![Badge HTML](https://img.shields.io/badge/HTML-5E5E5E?style=flat&logo=html5&logoColor=E34F26)
 - ![Badge CSS](https://img.shields.io/badge/CSS-5E5E5E?style=flat&logo=css3&logoColor=1572B6)
-- ![Badge JavaScript](https://img.shields.io/badge/JavaScript-5E5E5E?style=flat&logo=javascript&logoColor=F7DF1E) (com jQuery)
+- ![Badge JavaScript](https://img.shields.io/badge/JavaScript-5E5E5E?style=flat&logo=javascript&logoColor=F7DF1E)
+- ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
+- ![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white)
