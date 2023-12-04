@@ -268,4 +268,25 @@
   font-weight: 700;
 }
 
+.container-riot {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #f8f8f8;
+}
+
+.logo-riot img {
+  width: 178px;
+  height: 50px;
+  margin: 0;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+#btn-mobile {
+  display: none;
+}
+
 /*# sourceMappingURL=main.css.map */
