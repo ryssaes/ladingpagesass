@@ -1,0 +1,55 @@
+@use '../1-base/variables'
+
+.container-carousel
+    position: relative
+    background-color: variables.$gray !important
+    padding: 100px 0
+
+    img
+        width: 820px !important
+        height: 460px !important
+
+.owl-nav button.owl-next
+        background-image: url(../images/seta-direita1.png) !important
+        background-size: 20px 20px !important
+        background-repeat: no-repeat !important
+        background-position: center !important
+        width: 40px
+        height: 40px
+        background-color: variables.$orange !important
+        border-radius: 50px !important
+        position: absolute
+        right: 0
+        top: 45%
+
+        span
+            opacity: 0
+
+.owl-nav button.owl-prev
+        background-image: url(../images/seta-esquerda1.png) !important
+        background-size: 20px 20px !important
+        background-repeat: no-repeat !important
+        background-position: center !important
+        width: 40px 
+        height: 40px
+        background-color: variables.$orange !important
+        border-radius: 50px !important
+        position: absolute
+        left: 0
+        top: 45%
+
+        span
+            opacity: 0
+
+.owl-theme .owl-dots .owl-dot span 
+    width: 10px
+    height: 10px
+    margin-right: 10px
+    border: 1px solid variables.$black !important
+    background-color: variables.$gray
+
+.owl-theme .owl-dots .owl-dot.active span 
+    background-color: variables.$black
+
+.owl-theme .owl-dots .owl-dot:hover span 
+    background-color: variables.$black

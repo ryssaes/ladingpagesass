@@ -7,10 +7,6 @@
   display: none;
 }
 
-.mobile-menu {
-  display: none;
-}
-
 .logo img {
   width: 210px;
   height: 30px;
@@ -160,6 +156,9 @@
 .list-icons {
   list-style: none;
   display: flex;
+  gap: 20px;
+  padding: 0;
+  justify-content: center;
 }
 .list-icons img {
   width: 32px;
@@ -179,42 +178,94 @@
 
 .container-carousel {
   position: relative;
+  background-color: #f8f8f8 !important;
+  padding: 100px 0;
 }
 .container-carousel img {
   width: 820px !important;
   height: 460px !important;
 }
-.container-carousel .owl-nav button.owl-next {
-  background-image: url(../images/seta-direita1.png);
-  background-size: 10px 16px;
-  background-repeat: no-repeat;
-  background-position: center;
+
+.owl-nav button.owl-next {
+  background-image: url(../images/seta-direita1.png) !important;
+  background-size: 20px 20px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
   width: 40px;
   height: 40px;
-  background-color: #fa8550;
-  border-radius: 50px;
+  background-color: #fa8550 !important;
+  border-radius: 50px !important;
   position: absolute;
   right: 0;
-  top: 40%;
+  top: 45%;
 }
-.container-carousel .owl-nav button.owl-next span {
+.owl-nav button.owl-next span {
   opacity: 0;
 }
-.container-carousel .owl-nav button.owl-prev {
-  background-image: url(../images/seta-esquerda1.png);
-  background-size: 10px 16px;
-  background-repeat: no-repeat;
-  background-position: center;
+
+.owl-nav button.owl-prev {
+  background-image: url(../images/seta-esquerda1.png) !important;
+  background-size: 20px 20px !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
   width: 40px;
   height: 40px;
-  background-color: #fa8550;
-  border-radius: 50px;
+  background-color: #fa8550 !important;
+  border-radius: 50px !important;
   position: absolute;
   left: 0;
   top: 45%;
 }
-.container-carousel .owl-nav button.owl-prev span {
+.owl-nav button.owl-prev span {
   opacity: 0;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border: 1px solid #000 !important;
+  background-color: #f8f8f8;
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: #000;
+}
+
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #000;
+}
+
+.container-download {
+  background-color: #000;
+  padding-top: 150px;
+  padding-bottom: 150px;
+  text-align: center;
+  height: 482px;
+}
+
+.title-download {
+  font-size: 60px;
+  line-height: 72px;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+}
+
+.button-download {
+  margin-top: 50px;
+  border: none;
+  background-color: #fff;
+  color: #000;
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  margin: 0;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=main.css.map */

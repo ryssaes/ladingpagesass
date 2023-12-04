@@ -24,6 +24,10 @@
 .list-icons
     list-style: none
     display: flex
+    gap: 20px
+    padding: 0
+    justify-content: center
+
     img
         width: 32px
         height: 32px
@@ -38,42 +42,3 @@
         margin-top: 10px
         font-size: 18px
         line-height: 22px
-
-.container-carousel
-    position: relative
-
-    img
-        width: 820px !important
-        height: 460px !important
-
-    .owl-nav button.owl-next
-        background-image: url(../images/seta-direita1.png)
-        background-size: 10px 16px
-        background-repeat: no-repeat
-        background-position: center
-        width: 40px
-        height: 40px
-        background-color: variables.$orange
-        border-radius: 50px
-        position: absolute
-        right: 0
-        top: 40%
-
-        span
-            opacity: 0
-
-    .owl-nav button.owl-prev
-        background-image: url(../images/seta-esquerda1.png)
-        background-size: 10px 16px
-        background-repeat: no-repeat
-        background-position: center
-        width: 40px
-        height: 40px
-        background-color: variables.$orange
-        border-radius: 50px
-        position: absolute
-        left: 0
-        top: 45%
-
-        span
-            opacity: 0
