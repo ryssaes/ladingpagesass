@@ -159,6 +159,10 @@
   gap: 20px;
   padding: 0;
   justify-content: center;
+  flex-wrap: wrap;
+}
+.list-icons li {
+  width: 250px;
 }
 .list-icons img {
   width: 32px;
