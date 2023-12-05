@@ -17,6 +17,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  display: none;
 }
 .nav-desktop ul {
   display: flex;
@@ -162,7 +163,7 @@
   flex-wrap: wrap;
 }
 .list-icons li {
-  width: 250px;
+  width: 205px;
 }
 .list-icons img {
   width: 32px;

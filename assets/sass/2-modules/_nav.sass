@@ -1,5 +1,6 @@
 
     @use '../1-base/variables'
+    @import '../2-modules/_mixin'
 
     #btn-mobile
         display: none
@@ -13,6 +14,8 @@
         display: flex
         justify-content: space-around
         align-items: center
+        @include menu-mobile
+        display: none
         
         ul
             display: flex
