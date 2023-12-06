@@ -3,10 +3,98 @@
   font-family: "Roboto Condensed";
 }
 
+@media (max-width: 1070px) {
+  .nav-bar {
+    display: block;
+    position: relative;
+    width: 100%;
+    top: 70px;
+    right: 0;
+    background-color: white;
+    height: 0;
+    z-index: 9;
+    transition: 0.3s;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  .nav-bar a {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+@media (max-width: 1070px) {
+  .active {
+    text-align: center;
+    padding: 10px;
+    margin-top: -3px;
+    height: 150px;
+    visibility: visible;
+    verflow-y: hidden;
+    overflow-x: hidden;
+  }
+  .active::before {
+    transform: rotate(135deg);
+  }
+}
+@media (max-width: 1070px) and (max-width: 1070px) {
+  .active::after {
+    transform: rotate(-135deg);
+  }
+}
+
+.mobile {
+  display: none !important;
+}
+@media (max-width: 1070px) {
+  .mobile {
+    border-top: 1px solid #fa8550;
+    display: block !important;
+    position: absolute;
+    height: fit-content;
+    margin-top: -11px !important;
+  }
+  .mobile li {
+    padding-top: 10px !important;
+  }
+  .mobile li a {
+    display: block !important;
+    color: black !important;
+    font-weight: 700 !important;
+    font-size: 20px !important;
+  }
+}
+
 #btn-mobile {
   display: none;
 }
+@media (max-width: 1070px) {
+  #btn-mobile {
+    width: 20px;
+    padding: 0;
+    display: flex !important;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+}
 
+@media (max-width: 1070px) {
+  #hamburger {
+    border-top: 2px solid;
+    width: 20px;
+  }
+  #hamburger::before, #hamburger::after {
+    content: " ";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background-color: black;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+}
 .logo img {
   width: 210px;
   height: 30px;
@@ -17,7 +105,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  display: none;
 }
 .nav-desktop ul {
   display: flex;
@@ -34,6 +121,11 @@
   line-height: 29px;
   color: black;
   font-weight: 700;
+}
+@media (max-width: 1070px) {
+  .nav-desktop ul li a {
+    display: none;
+  }
 }
 
 .container-main {
@@ -69,6 +161,15 @@
   position: relative;
   z-index: 2;
 }
+@media (max-width: 425px) {
+  .container-main .main-overlay .main-title {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    margin-top: 150px;
+    padding-bottom: 0;
+  }
+}
 .container-main .main-overlay .main-title::after {
   content: " ";
   display: block;
@@ -88,6 +189,13 @@
   line-height: 29px;
   margin-top: 70px;
 }
+@media (max-width: 425px) {
+  .container-main .main-overlay .main-text {
+    width: 100%;
+    margin-top: 0;
+    padding: 20px;
+  }
+}
 
 .container-about {
   background-color: #fa8550;
@@ -95,11 +203,22 @@
   text-align: center;
   padding: 150px 0;
 }
+@media (max-width: 425px) {
+  .container-about {
+    height: auto;
+  }
+}
 .container-about h2 {
   font-size: 60px;
   line-height: 72px;
   color: #fff;
   font-weight: 700;
+}
+@media (max-width: 425px) {
+  .container-about h2 {
+    font-size: 36px;
+    line-height: 43px;
+  }
 }
 .container-about h2::after {
   content: "";
@@ -118,6 +237,14 @@
   color: #fff;
   font-weight: 500;
   margin-bottom: 50px;
+}
+@media (max-width: 425px) {
+  .container-about p {
+    width: 100%;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 .container-about .button-about {
   border: none;
@@ -163,7 +290,7 @@
   flex-wrap: wrap;
 }
 .list-icons li {
-  width: 205px;
+  width: 220px;
 }
 .list-icons img {
   width: 32px;
@@ -185,6 +312,9 @@
   position: relative;
   background-color: #f8f8f8 !important;
   padding: 100px 0;
+}
+.container-carousel .owl-carousel.owl-loaded {
+  height: 460px !important;
 }
 .container-carousel img {
   width: 820px !important;
@@ -231,6 +361,11 @@
   margin-right: 10px;
   border: 1px solid #000 !important;
   background-color: #f8f8f8;
+}
+@media (max-width: 425px) {
+  .owl-theme .owl-dots .owl-dot span {
+    display: none;
+  }
 }
 
 .owl-theme .owl-dots .owl-dot.active span {

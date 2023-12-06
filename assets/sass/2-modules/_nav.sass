@@ -1,9 +1,93 @@
 
     @use '../1-base/variables'
-    @import '../2-modules/_mixin'
+    @import 'mixin'
+
+
+    .nav-bar
+        @include menu-mobile
+            display: block
+            position: relative
+            width: 100%
+            top: 70px
+            right: 0
+            background-color: white
+            height: 0
+            z-index: 9
+            transition: 0.3s
+            visibility: hidden
+            overflow-y: hidden
+
+            a
+                @include menu-mobile  
+                margin-bottom: 10px
+                text-align: center   
+
+    .active
+        @include menu-mobile
+            text-align: center
+            padding: 10px
+            margin-top: -3px
+            height: 150px
+            visibility: visible
+            verflow-y: hidden
+            overflow-x: hidden 
+
+            &::before
+                transform: rotate(135deg)
+
+            &::after
+                @include menu-mobile
+                    transform: rotate(-135deg)
+
+    
+    .mobile
+        display: none !important
+        @include menu-mobile
+            border-top: 1px solid variables.$orange
+            display: block !important
+            position: absolute
+            height: fit-content
+            margin-top: -11px !important
+
+            li
+                padding-top: 10px !important
+
+                a
+                    display: block !important
+                    color: black !important
+                    font-weight: 700 !important
+                    font-size: 20px !important
+
+                
+
+            
 
     #btn-mobile
         display: none
+        @include menu-mobile
+            width: 20px
+            padding: 0
+            display: flex !important
+            border: none
+            background: none
+            cursor: pointer
+            gap: 0.5rem
+
+    #hamburger
+        @include menu-mobile
+            border-top: 2px solid
+            width: 20px
+
+            &::before, &::after
+                @include menu-mobile
+                content: ' '
+                display: block
+                width: 20px
+                height: 2px
+                background-color: black
+                margin-top: 5px
+                transition: 0.3s
+                position: relative
 
     .logo img
         width: 210px
@@ -14,8 +98,6 @@
         display: flex
         justify-content: space-around
         align-items: center
-        @include menu-mobile
-        display: none
         
         ul
             display: flex
@@ -32,3 +114,6 @@
                     line-height: 29px
                     color: black
                     font-weight: 700
+                    @include menu-mobile
+                        display: none
+                        

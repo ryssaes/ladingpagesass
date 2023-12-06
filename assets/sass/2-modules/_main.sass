@@ -1,4 +1,5 @@
 @use '../1-base/variables'
+@import 'mixin'
 
 .container-main
     background-image: url('../images/image-bg.jpg')
@@ -32,6 +33,13 @@
             color: variables.$white
             position: relative
             z-index: 2
+            @include mobile
+                width: 100%
+                height: auto
+                padding: 20px
+                margin-top: 150px
+                padding-bottom: 0
+    
 
             &::after
                 content: ' '
@@ -51,7 +59,10 @@
             font-size: 24px
             line-height: 29px
             margin-top: 70px
-        
+            @include mobile
+                width: 100%
+                margin-top: 0
+                padding: 20px
         
 
             

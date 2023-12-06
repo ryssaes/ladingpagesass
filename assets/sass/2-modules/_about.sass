@@ -1,16 +1,22 @@
 @use '../1-base/variables'
+@import 'mixin'
 
 .container-about
     background-color: variables.$orange 
     height: 605px
     text-align: center
     padding: 150px 0
+    @include mobile
+        height: auto
 
     h2
         font-size: 60px
         line-height: 72px
         color: variables.$white
         font-weight: 700
+        @include mobile
+            font-size: 36px
+            line-height: 43px
 
         &::after
             content: ''
@@ -29,6 +35,11 @@
         color: variables.$white
         font-weight: 500
         margin-bottom: 50px
+        @include mobile
+            width: 100%
+            padding: 20px
+            font-size: 20px
+            line-height: 24px
 
     .button-about
         border: none

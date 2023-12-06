@@ -1,9 +1,13 @@
 @use '../1-base/variables'
+@import 'mixin'
 
 .container-carousel
     position: relative
     background-color: variables.$gray !important
     padding: 100px 0
+
+    .owl-carousel.owl-loaded
+        height: 460px !important
 
     img
         width: 820px !important
@@ -47,6 +51,8 @@
     margin-right: 10px
     border: 1px solid variables.$black !important
     background-color: variables.$gray
+    @include mobile
+        display: none
 
 .owl-theme .owl-dots .owl-dot.active span 
     background-color: variables.$black

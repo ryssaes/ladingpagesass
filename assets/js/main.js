@@ -23,9 +23,11 @@ $(document).ready(function () {
 const btnMobile = document.getElementById("btn-mobile");
 
 function toggleMenu(event) {
-    if (event.type === "touchstart") event.preventDefault();
-    const nav = document.getElementById("nav");
+    event.preventDefault();
+    const nav = document.getElementById("menu-mobile");
     nav.classList.toggle("active");
+    console.log(nav);
+    
 }
 
 btnMobile.addEventListener("click", toggleMenu);
